@@ -1,6 +1,7 @@
 /**
  * Linode API Library
  * https://www.linode.com/api
+ * @module linode
  */
 
 var request = require('request');
@@ -8,6 +9,11 @@ var request = require('request');
 module.exports = {
     listLinodes
 }
+
+/**
+ * Returns a list of linode resources.
+ * @param {object} options - request module options object
+ */
 
 function listLinodes(options) {
     
